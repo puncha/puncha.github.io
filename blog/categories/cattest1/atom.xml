@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: catTest1 | PunCha's Blog]]></title>
+  <link href="http://yoursite.com/blog/categories/cattest1/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2014-02-09T13:43:34+00:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[PunCha Feng]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First Test It]]></title>
+    <link href="http://yoursite.com/blog/2014/02/09/first-test-it/"/>
+    <updated>2014-02-09T11:03:10+00:00</updated>
+    <id>http://yoursite.com/blog/2014/02/09/first-test-it</id>
+    <content type="html"><![CDATA[<h1>1</h1>
+
+<h2>2</h2>
+
+<h3>3</h3>
+
+<h4>This the header of test</h4>
+
+<p>```ruby
+class A
+  def foo(msg)</p>
+
+<pre><code>print msg
+</code></pre>
+
+<p>  end</p>
+
+<p>a = A.new()
+a.foo
+```
+&ndash; <a href="http://pcottle.github.io/learnGitBranching/">在线学习Git Branching, Remoting的课件（很有深度，效果很不错）</a></p>
+
+<ul>
+<li><p><a href="http://44ux.com/blog/2012/10/13/why-is-git-always-asking-for-my-password/">让你每次提交不用都输入用户名密码</a></p></li>
+<li><p><a href="http://gitbook.liuhui998.com/">Git Community Book 中文版（有深度）</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
