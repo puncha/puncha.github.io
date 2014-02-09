@@ -5,19 +5,15 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>PunCha's Blog</title>
-  <meta name="author" content="PunCha Feng">
+  <title>My Octopress Blog</title>
+  <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="1 2 3 This the header of test 1
-2
-3
-4
-5
-6
-7
-class A def foo(msg) print msg end a = A.new()
-a.foo 在线学习Git Branching, Remoting的课件（很有深度，效果很不错） &hellip;">
+  <meta name="description" content="下载Git命令行工具： http://www.git-scm.com
+Git不等价于GitHub。
+Git是以ChangeSet为单位的，而不是传统的version。
+Git是一个分布式版本管理系统，没有单点故障。
+配置文件： 系统级配置文件保存在: /etc/gitconfig （ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -29,7 +25,7 @@ a.foo 在线学习Git Branching, Remoting的课件（很有深度，效果很不
   <link rel="canonical" href="http://yoursite.com">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="PunCha's Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -44,9 +40,9 @@ a.foo 在线学习Git Branching, Remoting的课件（很有深度，效果很不
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">PunCha's Blog</a></h1>
+  <h1><a href="/">My Octopress Blog</a></h1>
   
-    <h2>Remmber something...</h2>
+    <h2>A blogging framework for hackers.</h2>
   
 </hgroup>
 
@@ -79,7 +75,7 @@ a.foo 在线学习Git Branching, Remoting的课件（很有深度，效果很不
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/02/09/first-test-it/">First Test It</a></h1>
+      <h1 class="entry-title"><a href="/blog/2014/02/09/learning-git/">Git 学习</a></h1>
     
     
       <p class="meta">
@@ -95,43 +91,215 @@ a.foo 在线学习Git Branching, Remoting的课件（很有深度，效果很不
   
 
 
-<time datetime="2014-02-09T11:03:10+00:00" pubdate data-updated="true">Feb 9<span>th</span>, 2014</time>
+<time datetime="2014-02-09T14:17:50+00:00" pubdate data-updated="true">Feb 9<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h1>1</h1>
-
-<h2>2</h2>
-
-<h3>3</h3>
-
-<h4>This the header of test</h4>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">A</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-</span><span class='line'>    <span class="nb">print</span> <span class="n">msg</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">a</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
-</span><span class='line'><span class="n">a</span><span class="o">.</span><span class="n">foo</span>
-</span></code></pre></td></tr></table></div></figure>
-
+  <div class="entry-content"><ol>
+<li><p>下载Git命令行工具： <a href="http://www.git-scm.com">http://www.git-scm.com</a></p></li>
+<li><p>Git不等价于GitHub。</p></li>
+<li><p>Git是以ChangeSet为单位的，而不是传统的version。</p></li>
+<li><p>Git是一个分布式版本管理系统，没有单点故障。</p></li>
+<li><p>配置文件：</p></li>
+<li><p> 系统级配置文件保存在: /etc/gitconfig （Windows: $ProgramFiles\Git\etc\gitconfig）</p></li>
+<li><p> 用户配置文件保存在: ~/.gitconfig （Windows: $HOME.gitconfig）</p></li>
+<li><p> 项目级配置文件保存在: <project folder>/.git/config` （Windows: <project folder>.git\config）</p></li>
+<li><p><code>git config</code>命令： 配置</p></li>
+<li><p><code>git config</code>: 修改项目级配置</p></li>
+<li><p><code>git config --system</code>: 修改系统级配置</p></li>
+<li><p><code>git config --global</code>: 修改<strong>用户</strong>级配置</p></li>
+<li><p><code>git config --list</code>: 显示配置信息</p></li>
+<li><p><code>git config user.name "xxx"</code>: 设置用户名</p></li>
+<li><p><code>git config --global core.editor "xxx"</code>： 设置默认的编辑器</p></li>
+<li><p><code>git config --global color.ui true</code>： 彩色输出</p></li>
+<li><p><code>git config --global core.excludesfile &lt;用户级ignore文件全路径&gt;</code>： 指定用户级.gitignore文件</p></li>
+<li><p><code>git config alias.&lt;缩写&gt; "字符串"</code>： 为字符串建立缩写，比如， st &ndash;> status, &mdash;oneline &ndash;> 1L</p></li>
+<li><p>类Unix系统可以安装Git auto-complete 脚本来支持git命令的自动完成。</p></li>
+<li><p><code>git help &lt;命令&gt;</code>： 获得某个命令的帮助</p></li>
+<li><p><code>git init</code>： 初始化当前目录为Git的本地工作区（简写：工作区）</p></li>
+<li><p><code>git add .</code>： 把当前目录下所欲文件都加入到Stage区（Stage index, Stage区都是同一个意思）</p></li>
+<li><p><code>git commit -m "说明"</code>： 提交Stage区的文件到本地Repo区（Repo, Repo区都是指本地Reop）</p></li>
+<li><p><code>git commit -am "说明"</code>： 把所有工作区的修改提交到stage区，然后再提交到Repo</p></li>
+<li><p><code>git commit --amend -m "说明"</code>： 向上一个（即最后一个）commit追加新的修改（也可以用来改上一个提交的说明）</p></li>
+<li><p>说明文字的 Good practise：</p>
 
 <ul>
-<li><p><a href="http://pcottle.github.io/learnGitBranching/">在线学习Git Branching, Remoting的课件（很有深度，效果很不错）</a></p></li>
-<li><p><a href="http://44ux.com/blog/2012/10/13/why-is-git-always-asking-for-my-password/">让你每次提交不用都输入用户名密码</a></p></li>
-<li><p><a href="http://gitbook.liuhui998.com/">Git Community Book 中文版（有深度）</a></p></li>
+<li><p>每行不超过72字符</p></li>
+<li><p>用现在时态，不要用过去式</p></li>
+<li><p>可以加入[css,js]、BugFix:#38405 等标签</p></li>
+<li><p>要易读</p></li>
 </ul>
+</li>
+<li><p><code>git log</code>： 显示提交日志(Commit Lig)</p></li>
+<li><p><code>git log -n 3</code>或 <code>git log -3</code>： 显示最新的3条提交</p></li>
+<li><p><code>git log --since=2013-12-01</code>： 显示特定时间之后的提交</p></li>
+<li><p><code>git log --until=2013xxx</code>： 显示特定时间之前的提交</p></li>
+<li><p><code>git log --author="xxxx"</code>： 显示特定作者的提交</p></li>
+<li><p><code>git log --grep="xxx"</code>： Grep</p></li>
+<li><p><code>git log --stat --summery</code>： 输出统计信息</p></li>
+<li><p><code>git log --oneline</code>： 每个commit显示一行</p></li>
+<li><p><code>git log &lt;commit id&gt;..&lt;commit id&gt;</code>： 显示特定两个commit id间的提交</p></li>
+<li><p><code>git log &lt;commit id&gt;..</code>： 显示从特定commit id间到当前的提交</p></li>
+<li><p><code>git log &lt;文件名&gt;</code>： 只显示特定文件的提交</p></li>
+<li><p><code>git log -p</code>： 显示比较信息</p></li>
+<li><p><code>git log --format=&lt;type&gt;</code>： 格式化输出。type可以是online、short、full、fuller等</p></li>
+<li><p><code>git log --graph</code>： 图形化输出</p></li>
+<li><p><code>git log --online --graph --all --decorate</code>： 一个很不错的输出样式</p></li>
+<li><p>HEAD指针指向的是下一个提交的parent提交（即你的最后一次提交），用<code>cat .git/HEAD</code>查看。</p></li>
+<li><p>Relative Refs:</p></li>
+<li><p><code>^</code>： 上一个提交（1号父节点）</p></li>
+<li><p><code>~n</code>： 上n个提交</p></li>
+<li><p><code>^2</code> 2号父节点（<strong>做merge那个提交一般会有2个父节点</strong>）</p></li>
+<li><p><code>HEAD~^2~2</code>： 支持级联（指向：父节点的2号父节点的爷爷节点）</p></li>
+<li><p><code>git status</code>： 显示Stage和工作区的文件状态。</p></li>
+<li><p><code>git diff</code>： Diff</p></li>
+<li><p><code>git diff</code>： 显示工作区内文件的diff情况</p></li>
+<li><p><code>git diff --staged</code>： 显示Stage区内文件的diff情况</p></li>
+<li><p><code>git diff &lt;文件名&gt;</code>： 显示特定文件的diff</p></li>
+<li><p><code>git diff --color-words</code>： 内联方式显示diff（行内diff）</p></li>
+<li><p><code>git diff &lt;commit id&gt;</code>： 列出特定commit的所有diff</p></li>
+<li><p><code>git diff &lt;commit id&gt; &lt;文件名&gt;</code>： 列出特定commit的中特定文件的diff</p></li>
+<li><p><code>git diff &lt;tree-ish&gt;..&lt;tree-ish&gt;</code>： 比较特定两个tree-ish之间的diff</p></li>
+<li><p><code>git diff &lt;Branch名#1&gt;..&lt;Branch名#2&gt;</code>： 比较特定两个Branch之间的diff</p></li>
+<li><p><code>git diff --ignore-space-change --ignore-all-space</code>： 忽略空白（空格）</p></li>
+<li><p><code>git diff -bw</code>： 同上（快捷版本）</p></li>
+<li><p><code>git rm</code>： 输出或者取消跟踪</p></li>
+<li><p><code>git rm &lt;文件名&gt;</code>： 删除特定文件并提交到Stage区</p></li>
+<li><p><code>git rm --cached &lt;文件名&gt;</code>： 不在Stage去跟踪（track）特定文件</p></li>
+<li><p><code>git mv &lt;源文件名&gt; &lt;目标文件名&gt;</code>： 移动文件或重命名文件，该操作可以分解为下面2条指令：</p></li>
+<li><p><code>git add &lt;目标文件名&gt;</code></p></li>
+<li><p><code>git rm &lt;源文件名&gt;</code></p></li>
+<li><p>重命名之后再对新文件进行修改，用<code>git status</code>显示的状态任然是rename，但是实际的修改还是会被提交的</p></li>
+<li><p><code>git checkout &lt;named things&gt;</code>： 功能有千万种</p></li>
+<li><p><code>git checkout -- &lt;文件名&gt;</code>： 工作区的文件还原成HEAD版本（还原本地文件），<code>--</code>是为了防止歧义</p></li>
+<li><p><code>git checkout &lt;另一个Branch名&gt;</code>： 切换到特定branch</p></li>
+<li><p><code>git checkout &lt;commit id&gt;</code>： 把HEAD指针指向某一个提交而不是通常的Branch（Detaching HEAD）</p></li>
+<li><p><code>git checkout &lt;commit id&gt; &lt;文件名&gt;</code>： 把特定文件同步到特定提交时的状态（Sync to revision）</p></li>
+<li><p><code>git checkout -f &lt;branch名&gt;</code>： 强制签出，忽略一切错误。<strong>假如有为提交的修改，可能会造成本地和Stage区数据丢失</strong></p></li>
+<li><p><code>git checkout -b &lt;新branch名&gt;</code>： 创建一个新的Branch并立刻切换到新Branch（-b表示both）</p></li>
+<li><p><code>git checkout -b &lt;新branch名&gt; &lt;base&gt;</code>： 以base为基础，创建一个新的Branch。base可以是remote branch（origin/xxx），也可以是commit的tree-ish(HEAD^^)，如果是remote branch的话，那么会自动tracking</p></li>
+<li><p><code>git reset</code>： <strong>git reset只能用在本地的branch上</strong></p></li>
+<li><p><code>git reset HEAD &lt;文件名&gt;</code>： 把Stage区的特定文件移动到本地工作区（Unstage特定文件）</p></li>
+<li><p><code>git reset --soft &lt;commit id&gt;</code>： 把Repo回溯到特定的提交（即移动HEAD指针到特定提交），所有被回溯的修改，都被放入Stage区</p></li>
+<li><p><code>git reset --mixed &lt;commit id&gt;</code>： 把Repo回溯到特定的提交（即移动HEAD指针到特定提交），所有被回溯的修改，都被放入工作区</p></li>
+<li><p><code>git reset --hard {&lt;commit id&gt;}</code>： 把Repo回溯到特定的提交（即移动HEAD指针到特定提交），所有被回溯的修改，都会<strong>丢失</strong>(ID不写就是HEAD）</p></li>
+<li><p><code>git revert</code>： 创建一个新的commit，包含了要revert的修改（和其他SCM的revert/rollback一样）</p></li>
+<li><p><code>git clean</code>： 清理工作区，没有在Stage区的修改都被重置（<strong>会丢失数据</strong>）</p></li>
+<li><p><code>git clean -n</code>： 预览（并不执行）</p></li>
+<li><p><code>git clean -f</code>： 真正执行</p></li>
+<li><p>排除（不track）特定的文件，可以修改 <code>&lt;project&gt;/.gitignore</code>文件，可以使用通配符和正则</p></li>
+<li><p>放一个<code>.gitkeep</code>文件到空目录，可以让git跟踪该目录</p></li>
+<li><p><code>git ls-tree &lt;tree-ish&gt;</code>： 列出特定时间的所有文件目录以及其tree-ish ID</p></li>
+<li><p>&lt;tree-rish>可以是Branch名（+目录名）</p></li>
+<li><p>&lt;tree-rish>可以是 HEAD、HEAD^^、HEAD~2、ID^、以及其他tree-ish语法</p></li>
+<li><p><code>git show</code>： 显示特定项目的详细信息</p></li>
+<li><p><code>git show &lt;commit id&gt;</code>： 显示特定提交的详细信息（包括diff）</p></li>
+<li><p><code>git show &lt;tree&gt;</code>： 显示特定tree-ish里面的文件名集合（等价于 <code>git ls-tree --name-only</code>）</p></li>
+<li><p><code>git show &lt;blob&gt;</code>： 显示特定文件的内容</p></li>
+<li><p><code>git branch</code>： branching~</p></li>
+<li><p><code>git branch</code>： 获取当前分支名</p></li>
+<li><p><code>git branch &lt;新branch名&gt;</code>： 以当前Branch为基础，创建一个新的Branch</p></li>
+<li><p><code>git branch --merged</code>： 列出当前branch所包含的其他branch名（原理是检查当前branch是否包含了其他branch的最后一个提交）</p></li>
+<li><p><code>git branch --move &lt;原branch名&gt; &lt;新branch名&gt;</code>： Branch重命名</p></li>
+<li><p><code>git branch (-d|--delete) &lt;branch名&gt;</code>： 删除特定Branch</p></li>
+<li><p><code>git branch -D &lt;branch名&gt;</code>： 强制删除特定Branch</p></li>
+<li><p><code>git branch -u &lt;origin/branch&gt; {&lt;branch名&gt;}</code>： 绑定（tracking)本地和远程的branch，省略本地branch名，则为当前branch</p></li>
+<li><p><code>git branch -set-upstream-to=&lt;origin/branch&gt; {&lt;branch名&gt;}</code>： 同上</p></li>
+<li><p><code>git branch -f &lt;其他Branch名&gt; &lt;commit id&gt;</code>： 强制将另一个branch的HEAD指向指定的commit（当然rref也是可以的）。<strong>这个会造成数据损失</strong></p></li>
+<li><p><code>git merge</code>： merge~</p></li>
+<li><p><code>git merge &lt;源branch&gt;</code>： 要merge两个branch，先要切换到目标branch（即receiver），因为merge这个操作会修改HEAD指针，所以先要切换到目标branch。</p></li>
+<li><p><code>git merge --abort</code>： merge到一半，可能因为有冲突，不想merge了，可以中止merge</p></li>
+<li><p><code>git merge --no-ff &lt;branch名&gt;</code>： 禁止Fast Forword Merge模式</p></li>
+<li><p><code>git merge --ff-only</code>： 仅允许Fast Forword Merge模式</p></li>
+<li><p>Merge假如有冲突，会进入一个特殊状态，让你解决冲突之后再继续，那么你可以：</p>
+
+<ul>
+<li><p><code>git merge --abort</code>： 去中止</p></li>
+<li><p><code>git commit</code>： 手动解决完了之后，执行这个命令，确认提交</p></li>
+<li><p><code>git mergedtool --tool=&lt;merge工具&gt;</code>： 使用工具来merge</p></li>
+</ul>
+</li>
+<li><p>好的merge习惯：</p>
+
+<ul>
+<li><p>代码每一行字符要少，不然merge起来麻烦</p></li>
+<li><p>每次提交要小</p></li>
+<li><p>勤merge</p></li>
+</ul>
+</li>
+<li><p><code>git stash</code>：</p></li>
+<li><p><code>git stash save "stash说明"</code>： 把工作区的修改暂存到该stash中</p></li>
+<li><p><code>git stash list</code>： 显示所有暂存的stash</p></li>
+<li><p><code>git stash show &lt;stash id&gt;</code>： 显示特定的stash</p></li>
+<li><p><code>git stash show -p &lt;stash id&gt;</code>： 显示特定stash中的详细diff</p></li>
+<li><p><code>git stash pop {&lt;stash id&gt;}</code>： 应用并清除特定stash，不写id就默认最后一个stash</p></li>
+<li><p><code>git stash apply {&lt;stash id&gt;}</code>： 应用特定stash，不写id就默认最后一个stash</p></li>
+<li><p><code>git stash drop &lt;stash id&gt;</code>： 删除特定stash</p></li>
+<li><p><code>git stash clear</code>： 清除所有stash</p></li>
+<li><p>stash建立的时候是和特定brancn相关的，但是可以被应用到不同的branch，但是有可能应用完之后需要merge，才能commit，假如你不想merge了，这时候用<code>git merge --abort</code>是不行的，只能用<code>git reset --hard</code>，但是小心丢失数据</p></li>
+<li><p><code>git remote</code>： 和远程的git server打交道（比如，github）</p></li>
+<li><p><code>git remote</code>： 列出连接的所有remote源</p></li>
+<li><p><code>git remote -v</code>： 列出remove源的更多信息（比如 REST API地址）</p></li>
+<li><p><code>git remote add &lt;origin&gt; &lt;url&gt;</code>： 添加一个remote源，命名为origin</p></li>
+<li><p><code>git remote rm &lt;origin&gt;</code>： 删除remote源</p></li>
+<li><p>remote的配置是保存在.get/config中的</p></li>
+<li><p><code>git push</code>： push commit到remote源</p></li>
+<li><p><code>git push &lt;origin&gt; &lt;本地branch名&gt;{:&lt;up-stream branch名&gt;}</code>： 提交本地branch到remote branch，省略目标名，则说明和本地branch同名，如果remote branch不存在，git会自动创建</p></li>
+<li><p><code>git push -u ...</code>： 同上，不过会绑定两者的关系（tracking branch），下次再push的时候，只要执行<code>git push</code>就行了</p></li>
+<li><p><code>git push &lt;origin&gt; :&lt;up-stream branch名&gt;</code>： 不写本地branch表示push一个空的branch，也就说删除远程branch</p></li>
+<li><p><code>git push &lt;origin&gt; --delete &lt;up-stream branch名&gt;</code>： 同上，删除远程branch</p></li>
+<li><p>Tracking branch 的信息可以通过<code>cat .git/refs/remotes/origin/master</code>查看</p></li>
+<li><p><code>git clone &lt;url&gt; {&lt;目标文件夹&gt;}</code>： 1）克隆remote源到一个新目录（不指定目标文件夹，则克隆到同名目录）。2）fetch所有remote branch。同时，他会创建本地master branch，并与远程master branch merge且绑定(tracking)，这里的master branch指的是default branch。</p></li>
+<li><p><code>git fetch</code>： pull~</p></li>
+<li><p><code>git fetch {&lt;origin&gt;}</code>： pull 所有remote branch下来到origin/*，如果绑定了，可以省略origin，没有绑定的话，所有remote的branch都会被pull下来</p></li>
+<li><p><code>git fetch &lt;origin&gt; &lt;up-stream branch名&gt;{:&lt;本地branch名&gt;}</code>： pull特定的remote branch下来，本地branch如果不存在，git会自动创建。<strong>其实fetch的用法和push差不多</strong></p></li>
+<li><p><code>git fetch &lt;origin&gt; :&lt;本地branch名&gt;</code>： 空的remote branch名~奇怪吧~这个命令可以用来创建一个新的本地branch（貌似是以remote端默认的branch创建的）</p></li>
+<li><p>好的习惯：</p>
+
+<ul>
+<li><p>工作前，先fetch</p></li>
+<li><p>push前，先fetch</p></li>
+<li><p>勤fetch</p></li>
+</ul>
+</li>
+<li><p>还有2个命令也可以从远程pull commit: <code>git cherry-pick &lt;origin/branch&gt;</code>、<code>git rebase &lt;origin/branch&gt;</code>，这两个命令和<code>git merge</code>不同，他们可以让提交变得扁平化。</p></li>
+<li><p><code>git pull</code>： pull~</p></li>
+<li><p><code>git pull</code>等价于 <code>git fetch</code> + <code>git merge</code> （pull下来，然后merge到本地）</p></li>
+<li><p><code>git pull --rebase</code>等价于 <code>git fetch</code> + <code>git rebase</code></p></li>
+<li><p><code>git pull &lt;up-stream url&gt; &lt;branch名&gt;</code>： 把remote repo的某个branch的提交pull到当前branch（常用于处理<a href="https://help.github.com/articles/merging-a-pull-request">pull request</a>）</p></li>
+<li><p><code>git push</code>： push</p></li>
+<li><p>一般Git的工作流程是：</p></li>
+<li><p><code>git checkout master</code></p></li>
+<li><p><code>git fetch</code></p></li>
+<li><p><code>git merge origin/master</code></p></li>
+<li><p><code>git checkout -b new_feature_1</code></p></li>
+<li><p><code>....</code></p></li>
+<li><p><code>git commit -am ...</code></p></li>
+<li><p><code>git fetch</code></p></li>
+<li><p><code>git push -u origin new_feature_1</code></p></li>
+<li><p><code>....</code></p></li>
+<li><p>Git的一些GUI工具：GitWeb, SmartGid</p></li>
+<li><p>Git的一些Host：GitHub、Gitbucket、Gitorious</p></li>
+<li><p>Git的一些开源实现：Gitosis、GitLab、Gitolite</p></li>
+<li><p><code>git rebase &lt;base branch名&gt;</code>： rebase～</p></li>
+<li><p><code>git rebase &lt;base branch名&gt; {&lt;目标branch名&gt;}</code>： Rebase目标branch（省略就是当前branch），把base branch之后的提交先暂存起来（做成一个patch），然后也就是sync base branch 的所有提交，再把补丁应用到当前branch。为什么需要这个命令呢？这是为了让commit 能够干净，线性化(linear)，具体可以参考：<a href="http://gitbook.liuhui998.com/4_2.html">这个说的很透彻</a></p></li>
+<li><p><code>git rebase --abort</code>： 如果有冲突，可以中止rebase</p></li>
+<li><p><code>git rebase --continue</code>： 如果有冲突，解决了一个之后，可以继续</p></li>
+<li><p><code>git rebase -i &lt;commit id&gt; &lt;branch名&gt;</code>： 对特定branch（我测试下来只能是本地的）进行交互式rebase，起始版本由commit id指定，rebase完了之后，可以通过<code>git push 或 git push -f origin &lt;branch名&gt;</code> push到remote。可以参考<a href="http://blog.chinaunix.net/uid-27714502-id-3436706.html">这篇文章</a>。<strong>这个对清理提交很有用，你可以在merge到master之前，对你所做的提交进行清理</strong></p></li>
+<li><p>要让GIT存储HTTPS认证信息，windows平台可以下载 <a href="http://gitcredentialstore.codeplex.com">git-credentialstore</a>，他会把你的用户名密码保存在Windows的key store里面。下载之后运行，他会自动将写到用户级别的git配置中，如果你要取消，可以执行：<code>git config --unset --global credential.helper</code></p></li>
+<li><p><code>git cherry-pick &lt;commit id1&gt; &lt;commit id2&gt; ...</code>： 把其他branch的commit依次复制(提交）到当前branch repo区（commit ID会变化）<strong>这个是除了rebase外，清理提交的另一种手段。</strong></p></li>
+<li><p>假如有时候，你想对之前的一个提交进行修改，那么可以这样操作：</p></li>
+<li><p>建立新的branch</p></li>
+<li><p>把要修改的commit通过<code>rebase -i</code>移动到最后面</p></li>
+<li><p>使用<code>git commit --amend</code>命令追加修改</p></li>
+<li><p>再使用<code>rebase -i</code>将该提交移动回原来的位置</p></li>
+<li><p>最后使用<code>git rebase caption master</code> 将master指针指向这个branch</p></li>
+<li><p><code>git tag &lt;tag名&gt; &lt;commit id&gt;</code>： 为某个提交打上标记，有了标记之后，你就可以<code>git checkout &lt;tag名&gt;</code>，类似于操作branch了</p></li>
+<li><p><code>git describe &lt;rref&gt;</code>： 可以用来简单描述一个commit。其返回的是<tag><em><num of commits></em><commit id>，比如： tagA_5_03abe，就是说这个commit是tagA后的5个提交，他的id是03abe</p></li>
+</ol>
 
 </div>
   
@@ -153,7 +321,7 @@ a.foo 在线学习Git Branching, Remoting的课件（很有深度，效果很不
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/02/09/first-test-it/">First Test It</a>
+        <a href="/blog/2014/02/09/learning-git/">Git 学习</a>
       </li>
     
   </ul>
@@ -169,7 +337,7 @@ a.foo 在线学习Git Branching, Remoting的课件（很有深度，效果很不
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - PunCha Feng -
+  Copyright &copy; 2014 - Your Name -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -181,6 +349,16 @@ a.foo 在线学习Git Branching, Remoting的课件（很有深度，效果很不
 
 
 
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
 
 
 
